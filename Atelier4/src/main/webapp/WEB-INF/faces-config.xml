@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="3.0" xmlns="https://jakarta.ee/xml/ns/jakartaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                                  https://jakarta.ee/xml/ns/jakartaee/web-facesconfig_3_0.xsd">
+
+
+  <navigation-rule>
+    <from-view-id>/index.xhtml</from-view-id>
+    <navigation-case>
+      <from-outcome>affichage</from-outcome>
+      <to-view-id>/affichage.xhtml</to-view-id>
+       <redirect>
+           <redirect-param>
+               <name>nom</name>
+               <value>#{etudiantBean.nom}</value>
+           </redirect-param>
+         <redirect-param>
+           <name>prenom</name>
+           <value>#{etudiantBean.prenom}</value>
+         </redirect-param>
+         <redirect-param>
+           <name>cin</name>
+           <value>#{etudiantBean.cin}</value>
+         </redirect-param>
+         <redirect-param>
+           <name>date_de_naissance</name>
+           <value>#{etudiantBean.date_de_naissance}</value>
+         </redirect-param>
+         <redirect-param>
+           <name>tele</name>
+           <value>#{etudiantBean.tele}</value>
+         </redirect-param>
+         <redirect-param>
+           <name>mail</name>
+           <value>#{etudiantBean.mail}</value>
+         </redirect-param>
+
+       </redirect>
+    </navigation-case>
+  </navigation-rule>
+</faces-config>

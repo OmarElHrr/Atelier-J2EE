@@ -1,0 +1,21 @@
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Atelier3?useSSL=false</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+        <!-- Select our SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- Echo the SQL to stdout -->
+        <property name="show_sql">true</property>
+        <!-- Set the current session context -->
+        <property name="hbm2ddl.auto">create-drop</property>
+
+
+        <mapping class="modul.Etudiant" />
+    </session-factory>
+</hibernate-configuration>

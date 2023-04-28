@@ -1,0 +1,7 @@
+org\example\WebServiceConfig.class
+org\example\SpringBootHelloWorldApplication.class
+org\example\WebServiceEndpoint.class
+org\example\InputSOATest.class
+org\example\OutputSOATest.class
+org\example\package-info.class
+org\example\ObjectFactory.class

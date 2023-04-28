@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Iscription</title>
+    <!-- Font-->
+    <link rel="stylesheet" href="lib/index.css"/>
+</h:head>
+<h:body class="form-v9">
+    <div class="page-content">
+        <div class="form-v9-content" style="background-image: url('lib/form-v9.jpg')">
+            <h:form class="form-detail">
+                <h2>Enregistrez-Vous</h2>
+                 <div class="form-row-total">
+                        <div class="form-row">
+                            <h:outputLabel for="nom" class="input-label">  Nom :</h:outputLabel>
+                            <h:inputText id="nom" value="#{etudiantBean.nom}" styleClass="input-text"  requiredMessage="⚠ Veuillez entrer votre Nom."
+                                         validatorMessage="⚠ Le nom ne doit contenir que des lettres">
+                                <f:validateRegex pattern="^[A-Za-z\-]+$" />
+                            </h:inputText>
+                            <h:message for="nom" style="color: red;"></h:message>
+                        </div>
+                    <div class="form-row">
+                        <h:outputLabel for="prenom" class="input-label">  Prénom :</h:outputLabel>
+                        <h:inputText id="prenom" value="#{etudiantBean.prenom}" styleClass="input-text" requiredMessage="⚠ Veuillez entrer votre Prénom"
+                                     validatorMessage="⚠ Le Prénom ne doit contenir que des lettres">
+                            <f:validateRegex pattern="^[A-Za-z\-]+$" />
+                        </h:inputText>
+                        <h:message for="prenom" style="color: red;"></h:message>
+                    </div>
+                </div>
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <h:outputLabel for="cin" class="input-label">  CIN :</h:outputLabel>
+                        <h:inputText id="cin" value="#{etudiantBean.cin}" styleClass="input-text" requiredMessage="⚠ Veuillez entrer votre CIN"
+                                     validatorMessage="⚠ Format de CIN invalide (XX000000)">
+                            <f:validateRegex pattern="^[A-Za-z]{2}[0-9]{6}$" />
+                        </h:inputText>
+                        <h:message for="cin" style="color: red;"></h:message>
+                    </div>
+                    <div class="form-row">
+                        <h:outputLabel for="date_naissance" class="input-label">  La Date du Naissance :</h:outputLabel>
+                        <h:inputText id="date_naissance" value="#{etudiantBean.date_de_naissance}" required="true" requiredMessage="⚠ Veuillez entrer votre date de naissance."
+                                     validatorMessage="⚠ Format de date invalide (yyyy-mm-dd)">
+                            <f:validateRegex pattern="^[0-9]{4}\-(0[1-9]|1[0-2])\-(0[1-9]|[1-2][0-9]|3[0-1])$" />
+                        </h:inputText>
+                        <h:message for="date_naissance" style="color: red;"></h:message>
+                    </div>
+                </div>
+                <div class="form-row-total">
+                    <div class="form-row">
+                        <h:outputLabel for="tele" class="input-label">  Telephone :</h:outputLabel>
+                        <h:inputText id="tele" value="#{etudiantBean.tele}" required="true" requiredMessage="⚠ Please enter your Phone"
+                                     validatorMessage="⚠ Format de Phone invalide (+212 XXXXXXXXX)">
+                            <f:validateRegex pattern="^\+212\s[0-9]{9}$" />
+                        </h:inputText>
+                        <h:message for="tele" style="color: red;"></h:message>
+                    </div>
+                    <div class="form-row">
+                        <h:outputLabel for="email" class="input-label">  Mail :</h:outputLabel>
+                        <h:inputText id="email" value="#{etudiantBean.mail}" required="true" requiredMessage="⚠ Veuillez entrer votre adresse e-mail"
+                                     validatorMessage="⚠ Format de adresse e-mail invalide (example@email.com)" >
+                            <f:validateRegex pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+                        </h:inputText>
+                        <h:message for="email" style="color:red" />
+                    </div>
+                </div>
+                <div class="form-row-last">
+                    <h:commandButton id="register" value="Register" styleClass="register" action="#{etudiantBean.submit()}" />
+
+                </div>
+            </h:form>
+        </div>
+    </div>
+
+</h:body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+    <title>Affichage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="lib/css/style.css"/>
+</h:head>
+<h:body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Bienvenue</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-wrap">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prenom</th>
+                            <th>CIN</th>
+                            <th>Date</th>
+                            <th>tele</th>
+                            <th>Mail</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row"><h:outputLabel value="#{param.nom}"/></th>
+                            <td><h:outputLabel value="#{param.prenom}"/></td>
+                            <td><h:outputLabel value="#{param.cin}"/></td>
+                            <td><h:outputLabel value="#{param.date_de_naissance}"/></td>
+                            <td><h:outputLabel value="#{param.tele}"/></td>
+                            <td><h:outputLabel value="#{param.mail}"/></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</h:body>
+</html>
+
