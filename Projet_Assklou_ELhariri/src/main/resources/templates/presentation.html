@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Revolve - Personal Magazine blog Template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all-min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- THEME CSS
+	================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-min.css">
+    <!-- Themify -->
+    <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="plugins/owl-carousel/owl-carousel-min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/owl-theme-default-min.css">
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+    <!-- manin stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<div class="header-logo py-5 d-none d-lg-block">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+                <a class="navbar-brand" href="index.html"><img th:src="@{${etablissemet.getLogo()}}"alt=""
+                                                               class="img-fluid w-100"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="header-top bg-grey justify-content-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-2 col-md-4 text-center d-none d-lg-block">
+                <a class="navbar-brand " href="index.html">
+                    <img src="images/logo.png" alt="" class="img-fluid">
+                </a>
+            </div>
+
+            <div class="col-lg-8 col-md-12">
+                <nav class="navbar navbar-expand-lg navigation-2 navigation">
+                    <a class="navbar-brand text-uppercase d-lg-none" href="#">
+                        <img src="images/logo.png" alt="" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+                            aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="ti-menu"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul id="menu" class="menu navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/home" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    Home
+                                </a>
+
+                            </li>
+
+
+                            <li class="nav-item"><a href="/home" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="/home" class="nav-link">Category</a></li>
+                            <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                        </ul>
+
+                        <ul class="list-inline mb-0 d-block d-lg-none">
+                            <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="ti-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <div class="header-socials-2 text-right d-none d-lg-block">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="ti-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--search overlay start-->
+<div class="search-wrap">
+    <div class="overlay">
+        <form action="#" class="search-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-9">
+                        <input type="text" class="form-control" placeholder="Search..." />
+                    </div>
+                    <div class="col-md-2 col-3 text-right">
+                        <div class="search_toggle toggle-wrap d-inline-block">
+                            <i class="ti-close"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--search overlay end-->
+
+<section class="single-block-wrapper section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <article class="post">
+                            <div class="post-header mb-5 text-center">
+                                <div class="meta-cat">
+                                    <a class="post-category font-extra text-color text-uppercase font-sm letter-spacing-1"
+                                       href="#"><span th:text="${etablissemet.getNom()}"></span></a>
+
+                                </div>
+                                <h2 class="post-title mt-2">
+                                    <span th:text="${etablissemet.getNomcomplait()}"></span>
+                                </h2>
+
+
+                            </div>
+
+                            <!--post gallery start-->
+                            <div class="post-img mb-4">
+                                <div class="post_gallery owl-carousel owl-theme">
+                                    <div class="item">
+                                        <a href="#"><img class="img-fluid" th:src="@{${etablissemet.getImage1()}}"
+                                                         style="width: 800px; height: 600px;" alt="" /></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-fluid" th:src="@{${etablissemet.getImage2()}}"
+                                                         style="width: 800px; height: 600px;" alt="" /></a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="#"><img class="img-fluid" th:src="@{${etablissemet.getImage3()}}"
+                                                         style="width: 800px; height: 600px;"   alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--post gallery end-->
+
+                            <div class="post-body">
+                                <div class="entry-content">
+                                    <h2 class="mt-4 mb-3" > <span th:text="${etablissemet.getNom()}"></h2>
+                                    <blockquote>
+                                        <i class="ti-quote-left mr-2"></i><span th:text="${etablissemet.getDescription()}" ></span><i class="ti-quote-right ml-2"></i>
+                                    </blockquote>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <img th:src="@{${etablissemet.getImage4()}}"
+                                                 style="width: 500px; height: 300px;" alt="post-img"
+                                                 class="img-fluid mr-4 w-100">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <img th:src="@{${etablissemet.getImage5()}}"
+                                                 style="width: 500px; height: 300px;"  alt="post-img2"
+                                                 class="img-fluid mr-4 w-100">
+                                        </div>
+                                    </div>
+                                    <h3 class="mt-5 mb-3"><span th:text="${etablissemet.getNom()}"></h3>
+
+                                    <div class="sidebar-widget category mb-5">
+                                        <h4 class="text-center widget-title">Catgeories</h4>
+                                        <ul class="list-unstyled">
+                                            <li class="align-items-center d-flex justify-content-between">
+                                                <a href="#">Lundi</a>
+                                                <span><span th:text="${etablissemet.getHeureOuverture()}">-</span>
+                                                    <span th:text="${etablissemet.getHeureFermeture()}"></span></span>
+                                            </li>
+                                            <li class="align-items-center d-flex justify-content-between">
+                                                <a href="#">Mardi</a>
+                                                <span><span th:text="${etablissemet.getHeureOuverture()}">-</span>
+                                                    <span th:text="${etablissemet.getHeureFermeture()}"></span></span>
+                                            </li>
+                                            <li class="align-items-center d-flex justify-content-between">
+                                                <a href="#">Mercredi</a>
+                                                <span><span th:text="${etablissemet.getHeureOuverture()}">-</span>
+                                                    <span th:text="${etablissemet.getHeureFermeture()}"></span></span>
+                                            </li>
+                                            <li class="align-items-center d-flex justify-content-between">
+                                                <a href="#">Jeudi</a>
+                                                <span><span th:text="${etablissemet.getHeureOuverture()}">-</span>
+                                                    <span th:text="${etablissemet.getHeureFermeture()}"></span></span>
+                                            </li>
+                                            <li class="align-items-center d-flex justify-content-between">
+                                                <a href="#">Vendredi</a>
+                                                <span><span th:text="${etablissemet.getHeureOuverture()}">-</span>
+                                                    <span th:text="${etablissemet.getHeureFermeture()}"></span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+</section>
+
+
+<!--footer start-->
+<footer
+        class="text-center text-lg-start text-white bg-grey"
+
+>
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        <span th:text="${etablissemet.getNom()}" ></span>
+                    </h6>
+                    <p>
+                        <span th:text="${etablissemet.getDescription()}" ></span>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> <span th:text="${etablissemet.getAdresse()}" ></span></p>
+                    <p><i class="fas fa-envelope mr-3"></i> <span th:text="${etablissemet.getEmail()}" ></span></p>
+                    <p><i class="fas fa-phone mr-3"></i> <span th:text="${etablissemet.getTelephone()}" ></span></p>
+                </div>
+                <!-- Grid column -->
+
+
+
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+</footer>
+<!-- Footer -->
+
+<!-- End of .container -->
+<!--footer end-->
+
+<!-- THEME JAVASCRIPT FILES
+================================================== -->
+<!-- initialize jQuery Library -->
+<script src="plugins/jquery/jquery.js"></script>
+<!-- Bootstrap jQuery -->
+<script src="plugins/bootstrap/js/bootstrap-min.js"></script>
+<script src="plugins/bootstrap/js/popper-min.js"></script>
+<!-- Owl caeousel -->
+<script src="plugins/owl-carousel/owl-carousel-min.js"></script>
+<script src="plugins/slick-carousel/slick-min.js"></script>
+<script src="plugins/magnific-popup/magnific-popup.js"></script>
+<!-- Instagram Feed Js -->
+<script src="plugins/instafeed-js/instafeed-min.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
+<script src="plugins/google-map/gmap.js"></script>
+<!-- main js -->
+<script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
